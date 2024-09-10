@@ -5,9 +5,7 @@ from config import GOOGLE_API_KEY
 
 st.title("AKARI")
 
-#genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
-#os.environ['GOOGLE_API_KEY'] = 'AIzaSyAgdNyJS-QXYQL_v2gcOoErNrm_VgNjYME'
-genai.configure(api_key = GOOGLE_API_KEY)#os.environ['GOOGLE_API_KEY'])
+genai.configure(api_key = GOOGLE_API_KEY)
 
 # Select the model
 model = genai.GenerativeModel('gemini-pro')

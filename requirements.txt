@@ -35,7 +35,6 @@ numexpr==2.8.4
 numpy==1.25.0
 openai==0.27.8
 openapi-schema-pydantic==1.2.4
-os
 packaging==23.1
 pandas==2.0.3
 Pillow==9.5.0

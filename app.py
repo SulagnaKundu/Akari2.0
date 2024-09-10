@@ -1,10 +1,15 @@
 import streamlit as st
 import google.generativeai as genai
-from config import GOOGLE_API_KEY
+#from config import GOOGLE_API_KEY
+from dotenv import load_dotenv
+import os
 
+load_dotenv() # load the environment variables from the .env file
+
+genai.configure(api_key = os.getenv('GOOGLE_API_KEY'))
 st.title("AKARI")
 
-genai.configure(api_key = GOOGLE_API_KEY)
+#genai.configure(api_key = GOOGLE_API_KEY)
 
 # Select the model
 model = genai.GenerativeModel('gemini-pro')
